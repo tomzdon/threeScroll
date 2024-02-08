@@ -358,11 +358,11 @@
 
 			function initScene() {
 				const dracoLoader = new DRACOLoader();
-				dracoLoader.setDecoderPath('../draco/');
+				dracoLoader.setDecoderPath('https://unpkg.com/three@0.161.0/examples/jsm/libs/draco/');
 
 				const loader = new GLTFLoader();
 				loader.setDRACOLoader(dracoLoader);
-				loader.load('../models/animEmoji.glb', function(gltf) {
+				loader.load('https://cdn.jsdelivr.net/gh/tomzdon/threeScroll@master/models/animEmoji.glb', function(gltf) {
 
 					let objectToRemove;
 					gltf.scene.traverse(function(child) {
